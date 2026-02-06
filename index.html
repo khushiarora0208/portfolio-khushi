@@ -13,11 +13,12 @@
 <body>
 
     <nav>
-        <div class="logo">KHUSHI<span style="color:var(--accent)">.</span></div>
+        <div class="logo"><a href="index.html">KHUSHI<span style="color:var(--accent)">.</span></a></div>
         <div class="nav-links">
-            <a href="#work" class="active">WORK</a>
-            <a href="#about">ABOUT</a>
-            <a href="#contact">CONTACT</a>
+            <a href="index.html" class="active">ABOUT</a>
+            <a href="resume.html">RESUME</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="contact.html">CONTACT</a>
         </div>
     </nav>
 
@@ -33,18 +34,29 @@
                 KHUSHI <br>
                 ARORA
             </h1>
-            <p style="color:var(--text-muted); margin-bottom: 3rem; max-width: 500px;">
-                Passionate AI Engineer dedicated to designing scalable intelligent systems. I leverage data and
-                algorithms to solve complex problems and drive innovation.
-            </p>
-            <a href="#contact" class="btn-primary">LET'S TALK</a>
+
+            <div class="bio-text">
+                <p>
+                    I am an AI/ML engineer with experience in designing and building end-to-end machine learning
+                    systems, from data preprocessing and model training to deployment. My work spans NLP, computer
+                    vision, and predictive modeling, with a strong focus on scalable and reliable AI solutions. I enjoy
+                    turning complex real-world problems into practical, production-ready ML systems.
+                </p>
+                <br>
+                <p style="color:var(--text-muted); font-size: 0.9rem;">
+                    <i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i> BASED IN DELHI, INDIA
+                </p>
+            </div>
+
+            <div class="cta-group" style="margin-top: 3rem;">
+                <a href="projects.html" class="btn-primary">VIEW WORK</a>
+                <a href="contact.html" class="btn-secondary"
+                    style="margin-left: 1rem; color: white; text-decoration: underline; font-family: var(--font-heading); font-size: 0.9rem;">GET
+                    IN TOUCH</a>
+            </div>
         </div>
         <div class="hero-image-container">
             <img src="portfolio.png" alt="Khushi Arora">
-            <div class="hero-overlay">
-                <p style="font-size: 0.8rem; color: #ccc;">BASED IN</p>
-                <p style="font-weight: 700;">DELHI, INDIA</p>
-            </div>
         </div>
     </header>
 
@@ -52,191 +64,6 @@
         <div class="marquee-content">
             ARTIFICIAL INTELLIGENCE - MACHINE LEARNING - PYTHON - TENSORFLOW - NLP - COMPUTER VISION -
             ARTIFICIAL INTELLIGENCE - MACHINE LEARNING - PYTHON - TENSORFLOW - NLP - COMPUTER VISION -
-        </div>
-    </div>
-
-    <section id="work" class="work-section">
-        <div class="section-header">
-            <h2>Selected Works</h2>
-            <span style="font-family: var(--font-heading); color: var(--text-muted);">07 PROJECTS</span>
-        </div>
-
-        <div class="bento-grid">
-            <!-- Featured Project (Span 2) -->
-            <!-- Featured Project (Span 2) -->
-            <div class="project-card span-2">
-                <div class="project-info">
-                    <h3>FinSight AI</h3>
-                    <p>Built an AI-powered Q&A and summarization system for SEC 10-K filings using LLaMA-3 + RAG.</p>
-                </div>
-                <div class="project-tech">
-                    <span class="tech-tag">LLaMA-3</span>
-                    <span class="tech-tag">RAG</span>
-                    <span class="tech-tag">Python</span>
-                </div>
-                <!-- Links could be modal triggers or direct links -->
-                <a href="#" class="card-link-icon trigger-modal" data-title="FinSight AI"
-                    data-desc="Automated SEC API data extraction, financial embeddings, and BART-based summarization for real-time analysis. Achieved ROUGE-1: 0.987 and BERTScore: 0.903, showing high semantic accuracy in financial outputs."
-                    data-repo="https://github.com/khushiarora0208/Finsight-AI-based-Simplification-of-SEC-10-K-Filings"
-                    data-paper="https://ieeexplore.ieee.org/document/11336620"
-                    data-demo="https://drive.google.com/file/d/1JZqGEuqZ3LahEXfIfDSkEv02sdBxuPMc/view?usp=drive_link">
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>River Waste Detection</h3>
-                    <p>Developed a Deep Learning–based system to detect and classify plastic vs. non-plastic waste
-                        objects in river bodies.</p>
-                </div>
-                <div class="project-tech">
-                    <span class="tech-tag">CV</span>
-                    <span class="tech-tag">Drone</span>
-                </div>
-                <a href="#" class="card-link-icon trigger-modal" data-title="River Waste Detection"
-                    data-desc="Achieved 96% classification accuracy, ensuring high reliability for real-world deployment in environmental monitoring. Automated plastic pollution detection pipeline, contributing to scalable solutions for water body conservation."
-                    data-results="https://drive.google.com/file/d/1zPntjwzrl0f0OlDsHlrS4gU_PVPC7eoa/view?usp=drive_link">
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-
-            <div class="project-card span-full" style="min-height: 400px; background: #0f0f0f;">
-                <!-- Could add a background image here for impact -->
-                <div class="project-info">
-                    <h3>X-Ray Reporter</h3>
-                    <p>Developed a multimodal AI system for automated chest X-ray report generation using ResNet-50 +
-                        ClinicalBERT.</p>
-                </div>
-                <div class="project-tech">
-                    <span class="tech-tag">Multimodal AI</span>
-                    <span class="tech-tag">Healthcare</span>
-                    <span class="tech-tag">NLP</span>
-                </div>
-                <a href="#" class="card-link-icon trigger-modal" data-title="X-Ray Reporter"
-                    data-desc="Implemented early, late, and hybrid fusion, with hybrid fusion achieving the best accuracy of 95.2%. Added negation-aware medical NLP and patient-friendly report summarisation to improve diagnostic clarity."
-                    data-repo="https://github.com/khushiarora0208/xray-caption-generation"
-                    data-demo="https://drive.google.com/file/d/1gFN_52t6Me6SDgkyj7UEhSLAO7RqSGkJ/view?usp=drive_link">
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Energy Consumption Prediction(MLOps)</h3>
-                    <p>Built an end-to-end MLOps pipeline for household energy consumption prediction using DVC for
-                        data/model versioning.</p>
-                </div>
-                <div class="project-tech">
-                    <span class="tech-tag">MLOps</span>
-                    <span class="tech-tag">CI/CD</span>
-                </div>
-                <a href="#" class="card-link-icon trigger-modal" data-title="Energy Consumption Prediction(MLOps)"
-                    data-desc="Tracked and compared experiments (RandomForest, XGBoost) with DVC Experiments, and served the final model via a Flask API for real-time predictions. Implemented CI/CD with GitHub Actions, containerized the app using Docker, and deployed automatically to AWS EC2 using SSM for secure, keyless deployment."
-                    data-repo="https://github.com/khushiarora0208/energy_consumption_prediction_mlops">
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-
-            <div class="project-card span-2">
-                <div class="project-info">
-                    <h3>More Projects</h3>
-                    <p>Check out my GitHub for more experiments and code.</p>
-                </div>
-                <div class="project-tech">
-                    <span class="tech-tag">GitHub</span>
-                    <span class="tech-tag">Open Source</span>
-                </div>
-                <a href="https://github.com/khushiarora0208" target="_blank" class="card-link-icon"
-                    style="opacity: 1; transform: none;">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <div id="about" class="stats-container">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <br>
-            <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 500px;">
-                I am an AI/ML engineer with experience in designing and building end-to-end machine learning systems,
-                from data preprocessing and model training to deployment. My work spans NLP, computer vision, and
-                predictive modeling, with a strong focus on scalable and reliable AI solutions. I enjoy turning complex
-                real-world problems into practical, production-ready ML systems.
-            </p>
-            <br><br>
-            <div class="hero-tags">
-                <span class="tag">7.8 GPA</span>
-                <span class="tag">Top 6 InnovateYou</span>
-            </div>
-        </div>
-        <div class="experience-list">
-            <div class="exp-item">
-                <div class="exp-header">
-                    <span>Engineering Student</span>
-                    <span>2022 - 2026</span>
-                </div>
-                <span class="exp-role">Symbiosis Institute of Technology</span>
-            </div>
-            <div class="exp-item">
-                <div class="exp-header">
-                    <span>Higher Secondary</span>
-                    <span>2021 - 2022</span>
-                </div>
-                <span class="exp-role">Navyug Convent School</span>
-            </div>
-            <div class="exp-item">
-                <div class="exp-header">
-                    <span>Certifications</span>
-                </div>
-                <ul
-                    style="list-style: none; color: var(--text-muted); padding: 0.5rem 0 0 0; font-size: 0.9rem; line-height: 1.8;">
-                    <li>Supervised Machine Learning: Regression and Classification - Coursera</li>
-                    <li>Advanced Learning Algorithms - Coursera</li>
-                    <li>Cloud Computing Fundamentals - Google</li>
-                    <li>The Complete Python Bootcamp From Zero to Hero in Python</li>
-                    <li>The Complete SQL Bootcamp: Go from Zero to Hero</li>
-                    <li>MATLAB Computer Vision Onramp</li>
-                    <li>Java (Basic) - Hackerrank</li>
-                    <li>Python (Basic) - Hackerrank</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <footer id="contact" class="contact-section">
-        <p style="color: var(--text-muted); margin-bottom: 2rem;">HAVE A PROJECT IN MIND?</p>
-        <a href="mailto:khushiarora2804@gmail.com" class="contact-title">SAY HELLO</a>
-
-        <div class="social-grid">
-            <a href="https://github.com/khushiarora0208" target="_blank" class="social-link">GITHUB</a>
-            <a href="https://www.linkedin.com/in/khushi-arora-1b050a258/" target="_blank"
-                class="social-link">LINKEDIN</a>
-        </div>
-
-        <div class="contact-details"
-            style="margin-top: 3rem; display: flex; flex-direction: column; gap: 0.5rem; color: var(--text-muted); font-size: 1.1rem; align-items: center;">
-            <p><i class="fas fa-envelope" style="margin-right: 10px; color: var(--accent);"></i>
-                khushiarora2804@gmail.com</p>
-            <p><i class="fas fa-phone" style="margin-right: 10px; color: var(--accent);"></i> +91-9319119390</p>
-        </div>
-
-        <p style="margin-top: 5rem; color: #333; font-size: 0.8rem;">
-            © 2026 KHUSHI ARORA. ALL RIGHTS RESERVED.
-        </p>
-    </footer>
-
-    <!-- Simple Modal Structure (Reused Concept) -->
-    <div id="project-modal"
-        style="position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:2000; display:none; justify-content:center; align-items:center;">
-        <div
-            style="background:var(--bg-card); padding:3rem; border-radius:20px; max-width:500px; width:90%; position:relative; border:1px solid rgba(255,255,255,0.1);">
-            <button class="close-modal"
-                style="position:absolute; top:1rem; right:1rem; background:none; border:none; color:white; font-size:1.5rem;">&times;</button>
-            <h3 id="modal-title" style="font-size:2rem; margin-bottom:1rem;">Title</h3>
-            <p id="modal-desc" style="color:var(--text-muted); margin-bottom:2rem;">Desc</p>
-            <div id="modal-links" style="display:flex; gap:1rem; flex-wrap:wrap;"></div>
         </div>
     </div>
 

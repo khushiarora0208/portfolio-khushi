@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Khushi Arora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body class="page-projects">
+
+    <nav>
+        <div class="logo"><a href="index.html">KHUSHI<span style="color:var(--accent)">.</span></a></div>
+        <div class="nav-links">
+            <a href="index.html">ABOUT</a>
+            <a href="resume.html">RESUME</a>
+            <a href="projects.html" class="active">PROJECTS</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </nav>
+
+    <div class="page-container">
+        <div class="section-header">
+            <h1>Selected Works</h1>
+        </div>
+
+        <div class="bento-grid single-column">
+            <!-- FinSight AI -->
+            <div class="project-card span-2">
+                <div class="project-info">
+                    <h3>FinSight AI</h3>
+                    <p>Built an AI-powered Q&A and summarization system for SEC 10-K filings using LLaMA-3 + RAG.</p>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">LLaMA-3</span>
+                    <span class="tech-tag">RAG</span>
+                    <span class="tech-tag">Python</span>
+                </div>
+                <a href="#" class="card-link-icon trigger-modal" data-title="FinSight AI"
+                    data-desc="Automated SEC API data extraction, financial embeddings, and BART-based summarization for real-time analysis. Achieved ROUGE-1: 0.987 and BERTScore: 0.903, showing high semantic accuracy in financial outputs."
+                    data-repo="https://github.com/khushiarora0208/Finsight-AI-based-Simplification-of-SEC-10-K-Filings"
+                    data-paper="https://ieeexplore.ieee.org/document/11336620"
+                    data-demo="https://drive.google.com/file/d/1JZqGEuqZ3LahEXfIfDSkEv02sdBxuPMc/view?usp=drive_link">
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- River Waste Detection -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>River Waste Detection</h3>
+                    <p>Developed a Deep Learning–based system to detect and classify plastic vs. non-plastic waste
+                        objects.</p>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">CV</span>
+                    <span class="tech-tag">Drone</span>
+                </div>
+                <a href="#" class="card-link-icon trigger-modal" data-title="River Waste Detection"
+                    data-desc="Achieved 96% classification accuracy, ensuring high reliability for real-world deployment in environmental monitoring. Automated plastic pollution detection pipeline, contributing to scalable solutions for water body conservation."
+                    data-results="https://drive.google.com/file/d/1zPntjwzrl0f0OlDsHlrS4gU_PVPC7eoa/view?usp=drive_link">
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- X-Ray Reporter -->
+            <div class="project-card span-full" style="min-height: 400px; background: #0f0f0f;">
+                <div class="project-info">
+                    <h3>X-Ray Reporter</h3>
+                    <p>Developed a multimodal AI system for automated chest X-ray report generation using ResNet-50 +
+                        ClinicalBERT.</p>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Multimodal AI</span>
+                    <span class="tech-tag">Healthcare</span>
+                    <span class="tech-tag">NLP</span>
+                </div>
+                <a href="#" class="card-link-icon trigger-modal" data-title="X-Ray Reporter"
+                    data-desc="Implemented early, late, and hybrid fusion, with hybrid fusion achieving the best accuracy of 95.2%. Added negation-aware medical NLP and patient-friendly report summarisation to improve diagnostic clarity."
+                    data-repo="https://github.com/khushiarora0208/xray-caption-generation"
+                    data-demo="https://drive.google.com/file/d/1gFN_52t6Me6SDgkyj7UEhSLAO7RqSGkJ/view?usp=drive_link">
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Energy Consumption -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Energy Consumption Prediction</h3>
+                    <p>Built an end-to-end MLOps pipeline for household energy consumption prediction using DVC for
+                        data/model versioning.</p>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">MLOps</span>
+                    <span class="tech-tag">CI/CD</span>
+                </div>
+                <a href="#" class="card-link-icon trigger-modal" data-title="Energy Consumption Prediction"
+                    data-desc="Tracked and compared experiments (RandomForest, XGBoost) with DVC Experiments, and served the final model via a Flask API for real-time predictions. Implemented CI/CD with GitHub Actions, containerized the app using Docker, and deployed automatically to AWS EC2 using SSM for secure, keyless deployment."
+                    data-repo="https://github.com/khushiarora0208/energy_consumption_prediction_mlops">
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- GitHub Card -->
+            <div class="project-card span-2">
+                <div class="project-info">
+                    <h3>More Projects</h3>
+                    <p>Check out my GitHub for more experiments and code.</p>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">GitHub</span>
+                    <span class="tech-tag">Open Source</span>
+                </div>
+                <a href="https://github.com/khushiarora0208" target="_blank" class="card-link-icon"
+                    style="opacity: 1; transform: none;">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="project-modal"
+        style="position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:2000; display:none; justify-content:center; align-items:center;">
+        <div
+            style="background:var(--bg-card); padding:3rem; border-radius:20px; max-width:500px; width:90%; position:relative; border:1px solid rgba(255,255,255,0.1);">
+            <button class="close-modal"
+                style="position:absolute; top:1rem; right:1rem; background:none; border:none; color:white; font-size:1.5rem;">&times;</button>
+            <h3 id="modal-title" style="font-size:2rem; margin-bottom:1rem;">Title</h3>
+            <p id="modal-desc" style="color:var(--text-muted); margin-bottom:2rem;">Desc</p>
+            <div id="modal-links" style="display:flex; gap:1rem; flex-wrap:wrap;"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
